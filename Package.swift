@@ -13,7 +13,7 @@ let package = Package(
             ),
         ],
         dependencies: [
-            .package(url: "https://github.com/liveramp/pl-sdk-ios-acc", from: "1.0.7")
+            .package(url: "https://github.com/liveramp/pl-sdk-ios", from: "1.0.7")
         ],
         targets: [
             .binaryTarget(
@@ -23,7 +23,7 @@ let package = Package(
                 name: "LRPrivacyManager",
                 dependencies: [
                     .target(name: "LRPrivacyManagerSDK"),
-                    .product(name: "LRPreferenceLinkSDK", package: "pl-sdk-ios-acc")
+                    .product(name: "LRPreferenceLinkSDK", package: "pl-sdk-ios")
                 ],
                 path: "Sources"
             )
